@@ -1,0 +1,213 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DAY 4- SHIVA M C</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+	<link rel="stylesheet" href="1style.css" type="text/css" />
+	<link rel="icon" href="logo.png">
+	
+</head>
+<body>
+	
+	<div id='wrap'>
+		<div class='options'>
+		
+			<label>
+				<input type='checkbox' class='toggleValidationTooltips' />
+				Disable validation tooltips
+			</label>
+		</div>
+		<h1 title='how forms should be done.'>JavaScript DAY 4</h1>
+		<section class='form'>
+			<form action="" method="post" novalidate>
+				<fieldset>
+					<div class="field">
+						<label>
+							<span>Name</span>
+							<input data-validate-length-range="6" data-validate-words="2" name="name" placeholder="ex. Bruce T Wayne" required="required" />
+						</label>
+						<div class='tooltip help'>
+							<span>?</span>
+							<div class='content'>
+								<b></b>
+								<p>Name must be at least 2 words</p>
+							</div>
+						</div>
+					</div>
+					<div class="field">
+						<label>
+							<span>Occupation</span>
+							<input class='optional' name="occupation" data-validate-length-range="5,15" type="text" />
+						</label>
+						<div class='tooltip help'>
+							<span>?</span>
+							<div class='content'>
+								<b></b>
+								<p>An optional field. This field is only validated when it has a value.<br /><em>Minimum 5 chars, maximum 15</em></p>
+							</div>
+						</div>
+                        <span class='extra'>(optional)</span>
+					</div>
+					
+					<div class="field">
+						<label>
+							<span>email</span>
+							<input name="email" class='email' required="required" type="email" />
+						</label>
+					</div>
+					
+					<div class="field">
+						<label>
+							<span>Confirm email address</span>
+							<input type="email" class='email' name="confirm_email" data-validate-linked='email' required='required'>
+						</label>
+					</div>
+					
+					<div class="field">
+						<label>
+							<span>Date</span>
+							<input class='date' type="date" name="date" required='required'>
+						</label>
+					</div>
+					<div class="field">
+						<label>
+							<span>Time</span>
+							<input class='time' type="time" name="time" required='required'>
+							<div class='tooltip help'>
+							<span>?</span>
+							<div class='content'>
+								<b></b>
+								<p>Format should be: XX:XX</p>
+							</div>
+						</div>
+						</label>
+					</div>
+					
+					<div class="field">
+						<label>
+							<span>password</span>
+							<input type="password" name="password2" data-validate-linked='password' required='required'>
+						</label>
+					</div>
+					<div class="field">
+						<label>
+							<span>Contact Number</span>
+							<input type="tel" class='tel' name="phone" required='required' data-validate-length-range="8,20">
+						</label>
+						<div class='tooltip help'>
+							<span>?</span>
+							<div class='content'>
+								<b></b>
+								<p>Notice that for a phone number user can input a '+' sign, a dash '-' or a space ' '</p>
+							</div>
+						</div>
+					</div>
+					<div class="field">
+						<label>
+							<span>Country</span>
+							<select required name="dropdown">
+								<option value="">-- please select --</option>
+								<option value="o1">India</option>
+								<option value="o2">United Kingdom</option>
+								<option value="o3">United States</option>
+							</select>
+						</label>
+						<div class='tooltip help'>
+							<span>?</span>
+							<div class='content'>
+								<b></b>
+								<p>Choose something or choose not. what shall it be?</p>
+							</div>
+						</div>
+					</div>
+					<div class="field">
+						<label>
+							<span>url</span>
+							<input name="url" placeholder="http://www.website.com" required="required" type="url" />
+						</label>
+					</div>
+
+					<div class="field">
+						<label>
+							<span>Terms & Conditions</span>
+							<input required="required" type="checkbox" />
+							<span>I agree to the terms and conditions</span>
+						</label>
+					</div>
+
+					<div class="field">
+						<label>
+							<span>Declaration</span>
+							<input type="checkbox" />
+							<span>I declare that my information is valid</span>
+						</label>
+					</div>
+
+					<div class="field multi required">
+						<label for='multi_first'>
+							<span>ID</span>
+						</label>
+						<div class='input'>
+							<input type="text" name="multi1" maxlength='4' id='multi_first'>
+							<input type="text" name="multi2" maxlength='4'>
+							<input type="text" name="multi3" maxlength='4'>
+							<input type="text" name="multi4" maxlength='4'>
+							<input type="text" name="multi5" maxlength='4'>
+							<input type="text" name="multi6" maxlength='4'>
+							<input data-validate-length-range="24" data-validate-pattern="alphanumeric" id="serial" name="serial" type="hidden" required='required' />
+						</div>
+						<div class='tooltip help'>
+							<span>?</span>
+							<div class='content'>
+								<b></b>
+								<p>This is a multifield, which let the user input a serial number or credit card number for example, and the trick is to validate the combined result, which is stored in a hidden field</p>
+							</div>
+						</div>
+					</div>
+					<div class="field">
+						<label>
+							<span>Upload Document</span>
+							<input type='file' required>
+						</label>
+					</div>
+					<div class="field">
+						<label>
+							<span>message</span>
+							<textarea required="required" name='message'></textarea>
+						</label>
+					</div>
+				</fieldset>
+				
+				<button type='submit'>Submit</button>
+                <button type='reset'>Reset</button>
+			</form>
+		</section>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="multifield.js"></script>
+    <script src="validator.js"></script>
+	<script>
+		
+		var validator = new FormValidator({"events" : ['blur', 'paste', 'change']}, document.forms[0]);
+		document.forms[0].onsubmit = function(e){
+			var submit = true,
+					validatorResult = validator.checkAll(this);
+
+			console.log(validatorResult);
+			return !!validatorResult.valid;
+		}
+		document.forms[0].onreset = function(e){
+				validator.reset();
+		}
+
+      
+		$('.toggleValidationTooltips').change(function(){
+			validator.settings.alerts = !this.checked;
+
+			if( this.checked )
+				$('form .alert').remove();
+		}).prop('checked',false);
+	</script>
+</body>
+</html>
