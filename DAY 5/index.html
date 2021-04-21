@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DAY5 TASK_SHIVA</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+	<link rel="stylesheet" href="1style.css" type="text/css" />
+	<link rel="icon" href="logo.png">
+	
+</head>
+<body>
+	
+	<div id='wrap'>
+		<div class='options'>
+		
+			<label>
+				<input type='checkbox' class='toggleValidationTooltips' />
+				Disable validation tooltips
+			</label>
+		</div>
+		<h1 title='how forms should be done.'>Sign Up</h1>
+		<section class='form'>
+			<form action="" method="post" novalidate>
+				<fieldset>
+					<div class="field">
+						<label>
+							<span>Username</span>
+							<input data-validate-length-range="6" data-validate-words="2" name="name" placeholder="   " required="required" />
+						</label>
+						<div class='tooltip help'>
+							<span>?</span>
+							<div class='content'>
+								<b></b>
+								<p>Name must be at least 2 words</p>
+							</div>
+						</div>
+					</div>				
+					
+					<div class="field">
+						<label>
+							<span>Password</span>
+							<input type="password" name="password2" data-validate-linked='password' required='required'>
+						</label>
+					</div>
+					<div class="field">
+						<label>
+							<span>Remember Me</span>
+							<input type="checkbox" />
+							<span></span>
+						</label>
+					</div>
+				
+				<button type='submit'>Login</button>
+                <button type='reset'>Reset</button>
+			</form>
+		</section>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="multifield.js"></script>
+    <script src="validator.js"></script>
+	<script>
+		
+		var validator = new FormValidator({"events" : ['blur', 'paste', 'change']}, document.forms[0]);
+		document.forms[0].onsubmit = function(e){
+			var submit = true,
+					validatorResult = validator.checkAll(this);
+
+			console.log(validatorResult);
+			return !!validatorResult.valid;
+		}
+		document.forms[0].onreset = function(e){
+				validator.reset();
+		}
+
+      
+		$('.toggleValidationTooltips').change(function(){
+			validator.settings.alerts = !this.checked;
+
+			if( this.checked )
+				$('form .alert').remove();
+		}).prop('checked',false);
+	</script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+<style>
+    div {
+        width: 100;
+    }
+</style>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script>
+        $(document).ready(
+            function() { //annoms function
+                $("#btnSubmit").click(
+                    function () {
+                    var name = $("#txtName").val();
+                    var err_style = {
+                        "border-color": "red",
+                        "border-width": "6px",
+                        "border-radius": "7px"
+                    }
+                    //console.log(name);  
+                    if (name == "")
+                    $("#txtName").css(err_style);
+                    }
+                )
+            }
+        );             
+    </script>
+<title>DAY 5- SHIVA M C</title>
+</head>
+
+<body>
+    <div>
+        <input class="form-control" type="text" id="txtName" />
+        <button class="btn btn-success" id="btnSubmit">Yes</button>
+    </div>
+    
+</body>
+</html>
