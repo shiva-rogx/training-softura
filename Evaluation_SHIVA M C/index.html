@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700" rel="stylesheet">
+    <link rel='shortcut icon' href='img/favicon.png' type='image/x-icon'>
+    <title>EVALUATION_SHIVA M C</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Cow & Bull_SHIVA M C</h1>
+    </header>
+    <br><br>
+    <section id="scoreboard">
+      <h3>Score Board:</h3>
+    </section>
+    <main>
+      <section id="gameboard">
+        <section id="initial">
+          <p class="instructions"></p>
+          <p class="instructions">
+            <span>Player 1</span> will give <span class="player1">his input</span>.
+            Think of a word then input the word.<br>
+            <span>Player 2</span> will guess<span class="player2">the word</span>.
+            Start guessing letters until you can either:
+            Solve the word to get your cow<span> OR </span>Ride a Bull<br>
+            Winner gets 100 points!
+          </p>
+          <button type="button" id="start">Start Game</button>
+        </section>
+        <section id="input">
+          <p class="instructions">
+            Player ONE enter a word longer than 3 letters, <br>no spaces, and
+            no special characters ( , ! & "" ).<br>(<span>DONT </span>let Player
+            TWO watch!).
+          </p>
+          <div>
+            <input type="text" name="word" id="word"/>
+            <button type="button">Submit Word</button>
+          </div>
+        </section>
+        <section id="wordField"></section>
+        <section id="alphabet"></section>
+      </section>
+      <section id="ward"></section>
+    </main>
+    <footer><p>By- SHIVA M C </p></footer>
+  </body>
+</html>

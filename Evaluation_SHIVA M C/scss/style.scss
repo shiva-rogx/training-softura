@@ -1,0 +1,190 @@
+@font-face {
+  font-family: 'Title Font';
+  src: url('../font/Walk-Around-the-Block.ttf');
+  font-size: small;
+}
+
+@import 'variables';
+@import 'mixins';
+
+html {
+  @include dimensions(100%, 100%);
+}
+
+body {
+  @include font(20px, $font-family, 1px);
+  @include flexbox(flex, column);
+  @include dimensions(90%, 100%);
+  background-image: $bg-img;
+  margin: 0 auto;
+  text-align: $center-text;
+}
+
+header {
+  flex: 0 1 auto;
+}
+
+h1 {
+  font-family: $font-title;
+  font-size: 75px;
+  margin: 10px 0 0;
+}
+
+h3 {
+  font-size: 30px;
+  margin: 0 10px;
+}
+
+input {
+  @include input-btn(1px solid $border-color, 4px, 30%);
+  box-sizing: border-box;
+  margin: 8px;
+  text-align: $center-text;
+}
+
+button {
+  @include input-btn(0, 4px, 25%, pointer, $btn-bg, $btn-font-clr);
+  margin: 10px;
+
+  &:hover {
+    @include hover($btn-font-clr, inset 0 0 10px $btn-bg, $btn-bg);
+  }
+}
+
+main {
+  @include dimensions(100%);
+  @include flexbox(flex, row);
+  flex: 1 1 auto;
+
+  > section {
+    @include dimensions(50%);
+
+    > section {
+      @include flexbox(flex, column, center);
+      @include dimensions(100%, 47.5%);
+      align-items: center;
+      background-color: $section-bg-color;
+      border-radius: 5px;
+    }
+
+    @media screen and (max-width: 600px) {
+      @include dimensions(100%);
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+  }
+}
+
+p {
+  margin: 0;
+}
+
+span {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+div {
+  @include dimensions(100%);
+}
+
+#scoreboard {
+  @include dimensions(75%);
+  @include hover($btn-font-clr, inset 0 0 10px $btn-bg, $btn-bg);
+  @include flexbox(flex, row, center);
+  align-items: center;
+  font-size: 22px;
+  padding: 10px 0;
+  border-radius: 4px;
+  margin: 0 auto;
+
+  > p {
+    margin: 0 10px;
+    padding: 0 5px;
+  }
+}
+
+#alphabet {
+  @include flexbox(flex, row wrap, center);
+  align-content: center;
+}
+
+.alphabet {
+  @include input-btn(0, 4px, 0, pointer, $btn-bg, $btn-font-clr);
+  @include flexbox(flex, $justify-content:center);
+  @include dimensions(45px, 50px);
+  font-weight: bold;
+  margin: 2.5px;
+
+  &:hover {
+    @include hover($btn-font-clr, inset 0 0 10px 0 $btn-bg, $btn-bg);
+  }
+
+  p {
+    align-self: center;
+  }
+}
+
+#wordField {
+  @include flexbox(flex, row, center);
+  margin-bottom: 20px;
+}
+
+.letter-holder {
+  @include flexbox(flex, column, flex-end);
+  @include dimensions(40px, 80px);
+  align-items: center;
+  margin: 5px;
+}
+
+.letter {
+  font-size: 60px;
+  margin: 0;
+}
+
+.dash {
+  @include dimensions(40px, 2px);
+  background-color: #000;
+  border-radius: 5px;
+}
+
+.instructions {
+  @include dimensions(100%);
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+footer {
+  @include flexbox(flex, $justify-content:center);
+  flex: 0 1 40px;
+
+  p 
+  {
+    align-self: center;
+    font-size: 16px;
+  }
+}
+
+#ward {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  @media screen and (max-width: 600px) {
+  }
+}
+
+.clicked {
+  @extend .alphabet;
+  @include hover($btn-font-clr, inset 0 0 10px $btn-bg, $btn-bg);
+}
+
+.player1 {
+  @include player($executioner-color, $executioner-color);
+}
+
+.player2 {
+  @include player($hangee-color, $hangee-color) ;
+}
