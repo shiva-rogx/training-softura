@@ -1,0 +1,13 @@
+C:\Users\Balaji\Desktop\Training\Day11_-NETCore\UnderstandingMoreOOPSProject\UnderstandingMoreOOPSProject\obj\Debug\netcoreapp3.1\UnderstandingMoreOOPSProject.csprojAssemblyReference.cache
+C:\Users\Balaji\Desktop\Training\Day11_-NETCore\UnderstandingMoreOOPSProject\UnderstandingMoreOOPSProject\obj\Debug\netcoreapp3.1\UnderstandingMoreOOPSProject.AssemblyInfoInputs.cache
+C:\Users\Balaji\Desktop\Training\Day11_-NETCore\UnderstandingMoreOOPSProject\UnderstandingMoreOOPSProject\obj\Debug\netcoreapp3.1\UnderstandingMoreOOPSProject.AssemblyInfo.cs
+C:\Users\Balaji\Desktop\Training\Day11_-NETCore\UnderstandingMoreOOPSProject\UnderstandingMoreOOPSProject\obj\Debug\netcoreapp3.1\UnderstandingMoreOOPSProject.csproj.CoreCompileInputs.cache
+C:\Users\Balaji\Desktop\Training\Day11_-NETCore\UnderstandingMoreOOPSProject\UnderstandingMoreOOPSProject\bin\Debug\netcoreapp3.1\UnderstandingMoreOOPSProject.exe
+C:\Users\Balaji\Desktop\Training\Day11_-NETCore\UnderstandingMoreOOPSProject\UnderstandingMoreOOPSProject\bin\Debug\netcoreapp3.1\UnderstandingMoreOOPSProject.deps.json
+C:\Users\Balaji\Desktop\Training\Day11_-NETCore\UnderstandingMoreOOPSProject\UnderstandingMoreOOPSProject\bin\Debug\netcoreapp3.1\UnderstandingMoreOOPSProject.runtimeconfig.json
+C:\Users\Balaji\Desktop\Training\Day11_-NETCore\UnderstandingMoreOOPSProject\UnderstandingMoreOOPSProject\bin\Debug\netcoreapp3.1\UnderstandingMoreOOPSProject.runtimeconfig.dev.json
+C:\Users\Balaji\Desktop\Training\Day11_-NETCore\UnderstandingMoreOOPSProject\UnderstandingMoreOOPSProject\bin\Debug\netcoreapp3.1\UnderstandingMoreOOPSProject.dll
+C:\Users\Balaji\Desktop\Training\Day11_-NETCore\UnderstandingMoreOOPSProject\UnderstandingMoreOOPSProject\bin\Debug\netcoreapp3.1\UnderstandingMoreOOPSProject.pdb
+C:\Users\Balaji\Desktop\Training\Day11_-NETCore\UnderstandingMoreOOPSProject\UnderstandingMoreOOPSProject\obj\Debug\netcoreapp3.1\UnderstandingMoreOOPSProject.dll
+C:\Users\Balaji\Desktop\Training\Day11_-NETCore\UnderstandingMoreOOPSProject\UnderstandingMoreOOPSProject\obj\Debug\netcoreapp3.1\UnderstandingMoreOOPSProject.pdb
+C:\Users\Balaji\Desktop\Training\Day11_-NETCore\UnderstandingMoreOOPSProject\UnderstandingMoreOOPSProject\obj\Debug\netcoreapp3.1\UnderstandingMoreOOPSProject.genruntimeconfig.cache
