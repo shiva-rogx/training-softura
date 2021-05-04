@@ -1,0 +1,4 @@
+C:\Users\Balaji\Desktop\Training\Day11_-NETCore\UnderstandingOOProject\UnderstandingOOProject\obj\Debug\netcoreapp3.1\UnderstandingOOProject.csprojAssemblyReference.cache
+C:\Users\Balaji\Desktop\Training\Day11_-NETCore\UnderstandingOOProject\UnderstandingOOProject\obj\Debug\netcoreapp3.1\UnderstandingOOProject.AssemblyInfoInputs.cache
+C:\Users\Balaji\Desktop\Training\Day11_-NETCore\UnderstandingOOProject\UnderstandingOOProject\obj\Debug\netcoreapp3.1\UnderstandingOOProject.AssemblyInfo.cs
+C:\Users\Balaji\Desktop\Training\Day11_-NETCore\UnderstandingOOProject\UnderstandingOOProject\obj\Debug\netcoreapp3.1\UnderstandingOOProject.csproj.CoreCompileInputs.cache
